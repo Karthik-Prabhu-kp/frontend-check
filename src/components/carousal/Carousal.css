@@ -1,0 +1,26 @@
+.carousal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  background-color: #f8f4f0;
+  flex-wrap: wrap;
+}
+
+.company-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .carousal {
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .company-logo {
+    height: 30px;
+  }
+}

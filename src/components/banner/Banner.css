@@ -1,0 +1,18 @@
+.banner {
+  background-color: #1264a3;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.banner span:first-child {
+  font-weight: 700;
+}
+
+.banner span:last-child {
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: underline;
+}

@@ -1,0 +1,133 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+.App {
+  font-family: "Lato", sans-serif;
+  background-color: #f8f4f0; /* Light beige background */
+  color: #1d1c1d;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  max-width: 1200px; /* Constrain the width for better alignment */
+  /* margin: 0 auto; Center the section */
+  margin: 0 auto 60px auto;
+  gap: 40px; /* Space between the text and image */
+  min-height: 400px; /* Ensure the section has enough height */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.hero-section div {
+  flex: 1; /* Left column takes up half the space */
+  text-align: left; /* Align text to the left */
+}
+
+.hero-section span {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-section button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 15px; /* Space between buttons */
+}
+
+.hero-section button:first-of-type {
+  background-color: #611f69; /* Purple for "Try for Free" */
+  color: white;
+}
+
+.hero-section button:last-of-type {
+  background-color: #4285f4; /* Google blue for "Sign up with Google" */
+  color: white;
+}
+
+.hero-section img {
+  flex: 1; /* Right column takes up half the space */
+  width: 100%;
+  max-width: 600px; /* Match the image size in the original design */
+  object-fit: contain; /* Ensure the image scales properly */
+}
+
+/* Secondary Section */
+.secondary-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.secondary-section img {
+  width: 100%;
+  max-width: 600px;
+  object-fit: contain;
+}
+
+.secondary-section div {
+  max-width: 400px;
+  text-align: left;
+}
+
+.secondary-section span {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.secondary-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.secondary-section button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: transparent;
+  color: #611f69;
+  border: 2px solid #611f69;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section div {
+    align-items: center;
+  }
+
+  .hero-section button {
+    margin: 10px 0;
+  }
+
+  .hero-section img {
+    margin-top: 30px;
+  }
+}
